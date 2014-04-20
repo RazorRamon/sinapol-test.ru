@@ -1,0 +1,32 @@
+#header
+  .header_left
+    = link_to 'english version', '#'
+    .block_sotrudnichestva
+      Стать дилером
+      = link_to '', '#'
+        = image_tag( 'skobka-right.png' )
+      %br/
+      = link_to 'условия сотрудничества', '#', { class: 'uslovia' }
+  .header_center
+  .header_right
+    = link_to 'перезвоните мне', '#'
+    .block_sviazi
+      +7 495 221-84-55
+      %br/
+      = link_to 'форма обратной связи', '#'
+	  
+#block_menu
+  .verh_menu
+    %ul.v_menu
+      %li.active
+        = link_to 'О компании', '#'
+      %li
+        = link_to 'Каталог продукции', '#'
+      %li
+        = link_to 'Отзывы', '#'
+      %li
+        = link_to 'Доставка', '#'
+      %li
+        = link_to 'Дилеры', '#'
+      %li
+        = link_to 'Контакты', '#'

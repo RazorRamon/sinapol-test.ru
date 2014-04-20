@@ -1,0 +1,1257 @@
+/* Verstal: V V P */
+/* ------ */
+/* FONTS */
+  
+@font-face {
+  font-family: "Ubuntu Condensed";
+  src: url("/fonts/ubuntu-condensed.eot");
+  src: url("/fonts/ubuntu-condensed.eot?#iefix") format("embedded-opentype"), url("/fonts/ubuntu-condensed.woff") format("woff"), url("/fonts/ubuntu-condensed.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+  
+/* General styles */
+
+body {
+	height: 100%;
+}
+
+* {
+	-moz-box-sizing: border-box; /* Для Firefox */  
+	box-sizing: border-box; /* Ширина блока с полями */
+
+}
+
+.clear_div {
+	clear: both;
+}
+
+/* ------ */
+/* HEADER */
+/* ------ */
+
+.wrap_header {
+	width: 100%;
+	min-width: 900px;
+	/*background: #0995c5;*/
+	background: url('/images/fon-header-pic.png') repeat;
+}
+
+.bg_header {
+	width: 100%;
+	background: url('/images/fon-header.png') 0px 0px no-repeat;
+	background-position: center;
+}
+
+#header {
+	width: 900px;
+	height: 249px;
+	margin: auto;
+	padding:0px 15px 10px;
+}
+
+#header a{
+	font-family: "Trebuchet MS";
+	font-size: 13px;
+	color: #CCCCCC;
+	font-style: italic;
+	line-height: 25px;
+	text-decoration: underline;
+}
+
+#header .header_left {
+	width: 250px;
+	text-align: left;
+	float: left;
+}
+
+#header .block_sotrudnichestva {
+	margin-top: 80px;
+	background: url('/images/user_ico.png') 0px 0px no-repeat;
+	padding-left: 25px;
+	font-family: "Ubuntu Condensed";
+	font-size: 15px;
+	color: #333333;
+	text-transform: uppercase;
+}
+
+#header .block_sotrudnichestva a{
+	text-decoration: none;
+}
+
+#header .block_sotrudnichestva a.uslovia{
+	margin-left: -25px;
+	font-family: "Ubuntu Condensed";
+	font-size: 15px;
+	color: #fff;
+	line-height: 25px;
+	text-transform: none;
+	font-style: normal;
+	font-weight: 100;
+	text-decoration: none;
+	border-bottom: 1px dashed #fff;
+}
+
+#header .header_center {
+	background: url('/images/logo-min.png') 0px 0px no-repeat;
+	width: 347px;
+	height: 230px;
+	margin: -3px auto;
+	float:left;
+}
+
+#header .header_right {
+	width: 250px;
+	text-align: right;
+	float: right;
+}
+
+#header .block_sviazi {
+	margin-top: 75px;
+	font-family: "Ubuntu Condensed";
+	font-size: 24px;
+	color: #333333;
+	text-transform: uppercase;
+	line-height: 20px;
+}
+
+#header .block_sviazi a{
+	font-family: "Ubuntu Condensed";
+	font-size: 15px;
+	color: #fff;
+	text-transform: none;
+	font-style: normal;
+	text-decoration: none;
+	border-bottom: 1px dashed #fff;
+}
+
+/* --------- */
+/* MENU_VERH */
+/* --------- */
+
+.wrap_block_menu {
+	width: 100%;
+	min-width: 900px;
+}
+
+.bg_block_menu {
+	width: 900px;
+	margin: 0 auto;
+}
+
+#block_menu {
+	margin: 0px auto;
+	width: 900px;
+	height: 41px;
+	padding:0px;
+}
+
+#block_menu .verh_menu {
+	position: relative;
+	margin-top: -22px;
+	width: 900px;
+	height: 41px;
+	background: -moz-linear-gradient(top, #FF952F, #FF6A04); /* Firefox 3.6+ */
+    /* Chrome 1-9, Safari 4-5 */
+    background: -webkit-gradient(linear, left top, left bottom, 
+                color-stop(0%,#FF952F), color-stop(100%,#FF6A04));
+    /* Chrome 10+, Safari 5.1+ */
+    background: -webkit-linear-gradient(top, #FF952F, #FF6A04);
+    background: -o-linear-gradient(top, #FF952F, #FF6A04); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #FF952F, #FF6A04); /* IE10 */
+    background: linear-gradient(top, #FF952F, #FF6A04); /* CSS3 */
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-ms-border-radius: 20px;
+	-o-border-radius: 20px;
+	border-radius: 20px;
+	z-index: 100;
+}
+
+#block_menu ul.v_menu{
+	width: 900px;
+	margin: auto;
+	list-style: none;
+	padding: 0px;
+	text-align: center;
+}
+
+#block_menu ul.v_menu li {
+	display: inline-block;
+	margin-left: 20px;
+    margin-right: 20px;
+	height: 41px;
+	cursor: pointer;
+}
+	
+#block_menu ul.v_menu li:hover {
+	border-bottom: 2px solid #fff;
+}
+
+#block_menu ul.v_menu li.active {
+	background: url('/images/menu-active.png') 50% 100% no-repeat;
+	overflow: visible;
+	height: 46px;
+}
+
+#block_menu ul.v_menu li.active:hover {
+	border-bottom: 0px solid #fff;
+}
+
+#block_menu ul.v_menu li.active a{
+	font-family: "Ubuntu Condensed";
+    font-size: 16px;
+    color: #333;
+	height: 41px;
+	border-bottom: 2px solid #fff;
+}
+
+#block_menu ul.v_menu a {
+    display: block;
+    line-height: 36px;
+	font-family: "Ubuntu Condensed";
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+	text-transform: uppercase;
+}
+
+#block_menu ul.v_menu a:hover {
+    text-decoration: none;
+}
+
+/* ---------------------- */
+/* VSPLYVAUSHEE_MENU_VERH */
+/* ---------------------- */
+
+.wrap_block_vsplyv_menu {
+	width: 100%;
+	min-width: 900px;
+}
+
+.wriper_menu {
+	position: relative;
+	width: 900px;
+	margin: 0px auto;
+}
+
+#block_vsplyv_menu {
+	height: 41px;
+	z-index: 2000;
+	position: fixed;
+	top: 0px;
+	opacity: 0.9;
+	filter: alpha(opacity=90);
+}
+
+#block_vsplyv_menu .verh_menu {
+	position: relative;
+	width: 900px;
+	height: 41px;
+	background: -moz-linear-gradient(top, #FF952F, #FF6A04); /* Firefox 3.6+ */
+    /* Chrome 1-9, Safari 4-5 */
+    background: -webkit-gradient(linear, left top, left bottom, 
+                color-stop(0%,#FF952F), color-stop(100%,#FF6A04));
+    /* Chrome 10+, Safari 5.1+ */
+    background: -webkit-linear-gradient(top, #FF952F, #FF6A04);
+    background: -o-linear-gradient(top, #FF952F, #FF6A04); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #FF952F, #FF6A04); /* IE10 */
+    background: linear-gradient(top, #FF952F, #FF6A04); /* CSS3 */
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-ms-border-radius: 20px;
+	-o-border-radius: 20px;
+	border-radius: 20px;
+	z-index: 100;
+}
+
+#block_vsplyv_menu ul.v_menu{
+	width: 900px;
+	margin: auto;
+	list-style: none;
+	padding: 0px;
+	text-align: center;
+}
+
+#block_vsplyv_menu ul.v_menu li {
+	display: inline-block;
+	margin-left: 20px;
+    margin-right: 20px;
+	height: 41px;
+	cursor: pointer;
+}
+	
+#block_vsplyv_menu ul.v_menu li:hover {
+	border-bottom: 2px solid #fff;
+}
+
+#block_vsplyv_menu ul.v_menu li.active {
+	background: url('/images/menu-active.png') 50% 100% no-repeat;
+	overflow: visible;
+	height: 46px;
+}
+
+#block_vsplyv_menu ul.v_menu li.active:hover {
+	border-bottom: 0px solid #fff;
+}
+
+#block_vsplyv_menu ul.v_menu li.active a{
+	font-family: "Ubuntu Condensed";
+    font-size: 16px;
+    color: #333;
+	height: 41px;
+	border-bottom: 2px solid #fff;
+}
+
+#block_vsplyv_menu ul.v_menu a {
+    display: block;
+    line-height: 36px;
+	font-family: "Ubuntu Condensed";
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+	text-transform: uppercase;
+}
+
+#block_vsplyv_menu ul.v_menu a:hover {
+    text-decoration: none;
+}
+
+/* ------ */
+/* SLIDER */
+/* ------ */
+
+.wrap_block_slider {
+	width: 100%;
+	min-width: 900px;
+	background: #8a9094;
+	height: 500px;
+}
+
+.bg_block_slider {
+	margin: -20px auto;
+	background: url('/images/slide-1.png') 0px 0px no-repeat;
+	background-position: center;
+	width: 100%;
+}
+
+#block_slider {
+	margin: -20px auto;
+	width: 900px;
+	height: 520px;
+	padding:230px 15px 0px 445px;
+}
+
+#block_slider .slider_description:before{
+	position: absolute;
+	left: -8px;
+	top:-3px;
+	content: "";
+	width: 454px;
+	height: 16px;
+	background: url('/images/slider_description_top.png') 0px 0px no-repeat;
+	opacity: 0.4;
+}
+
+#block_slider .slider_description{
+	position: relative;
+	font-family: "Ubuntu Condensed";
+    font-size: 14px;
+    color: #fff;
+	text-align: justify;
+	width: 437px;
+}
+
+#block_slider .slider_description:after{
+	position: absolute;
+	left: -8px;
+	margin-top: -9px;
+	content: "";
+	width: 454px;
+	height: 16px;
+	background: url('/images/slider_description_bottom.png') 0px 0px no-repeat;
+	opacity: 0.4;
+}
+
+#block_slider ul.slider_paginavi{
+	list-style: none;
+	height: 15px;
+	float: right;
+	margin: 35px -12px 0px;
+}
+
+#block_slider ul.slider_paginavi li.slader_strelka_left{
+	background: url('/images/slader_strelka_left.png') 2px 0px no-repeat;
+	width: 14px;
+	height: 14px;
+}
+
+#block_slider ul.slider_paginavi li{
+	background: url('/images/slider-bullet-0.png') 0px 0px no-repeat;
+	width: 14px;
+	height: 14px;
+	float: left;
+	margin: 10px 9px;
+}
+
+#block_slider ul.slider_paginavi li a{
+	text-decoration: none;
+}
+
+#block_slider ul.slider_paginavi li.activ{
+	background: url('/images/slider-bullet-1.png') 0px 0px no-repeat;
+	width: 14px;
+	height: 14px;
+}
+
+#block_slider ul.slider_paginavi li.slader_strelka_right{
+	background: url('/images/slader_strelka_right.png') 2px 0px no-repeat;
+	width: 14px;
+	height: 14px;
+}
+
+/* SCREEN */
+
+#example {
+	width: 454px;
+	position: relative;
+}
+
+#slides .slide:before{
+	position: absolute;
+	left: -8px;
+	top:-3px;
+	content: "";
+	width: 454px;
+	height: 16px;
+	background: url('/images/slider_description_top.png') 0px 0px no-repeat;
+	opacity: 0.4;
+}
+
+#slides .slide {
+	position: relative;
+	font-family: "Ubuntu Condensed";
+    font-size: 14px;
+    color: #fff;
+	text-align: justify;
+	width: 437px;
+}
+
+#slides .slide:after{
+	position: absolute;
+	left: -8px;
+	margin-top: -9px;
+	content: "";
+	width: 454px;
+	height: 16px;
+	background: url('/images/slider_description_bottom.png') 0px 0px no-repeat;
+	opacity: 0.4;
+}
+
+#slides .next, #slides .prev {
+	position: relative;
+	width: 9px;
+	height: 13px;
+	float: left;
+	margin-top: 19px;
+}
+
+#slides .prev {
+	margin-left: 200px;
+	left: 30px;
+}
+
+#slides .next {
+	float: right;
+	margin-right: 10px;
+}
+
+#slides .next img, #slides .prev img{
+	width: 9px;
+	height: 13px;
+}
+
+.slides_container {
+	height: 195px;
+	overflow: hidden;
+	position: relative;
+	padding: 8px 0 0 8px;
+}
+
+ul.pagination{
+	list-style: none;
+	height: 15px;
+	float: right;
+    margin: 12px 20px 0 0;
+    width: 200px;
+}
+
+.pagination li {
+	float: right;
+	margin: 10px 9px;
+	width: 14px;
+	height: 14px;
+}
+
+.pagination li a {
+	display: block;
+	width: 14px;
+	height: 0;
+	padding-top: 14px;
+	background-image: url('/img/pagination.png');
+	background-position: 0 0;
+	float: left;
+	overflow: hidden;
+	text-decoration: none;
+}
+
+.pagination li.current a {
+	background-position: 0 -14px;
+}
+
+#slides .link {
+	display: block;
+	margin-top: 10px;
+	font-weight: 800;
+}
+
+/* ----- */
+/* ABOUT */
+/* ----- */
+
+.wrap_about {
+	width: 100%;
+	min-width: 900px;
+	/*background: #cfcfcf;*/
+	background: url('/images/made_in_germany-pic.png') repeat;
+}
+
+.bg_about {
+	margin: 0px auto;
+	background: url('/images/made_in_germany-mini.png') 0px 0px no-repeat;
+	background-position: center;
+	width: 100%;
+}
+
+#about {
+	margin: 0px auto;
+	width: 900px;
+	height: 170px;
+	padding:10px 15px;
+}
+
+#about img{
+	float: left;
+	margin-right: 30px;
+}
+
+#about h1{
+	font-family: "Ubuntu Condensed";
+    font-size: 30px;
+    color: #333;
+	line-height: 25px;
+	font-weight: normal;
+}
+
+#about p{
+	font-family: "Ubuntu Condensed";
+    font-size: 14px;
+    color: #333;
+	text-align: left;
+	height: 60px;
+	font-weight: normal;
+}
+
+/* ------- */
+/* CATALOG */
+/* ------- */
+
+#catalog {
+	margin: 0px auto;
+	width: 900px;
+	height: 620px;
+	padding:10px 15px;
+}
+
+#catalog h1{
+	text-align: center;
+	font-family: "Ubuntu Condensed";
+    font-size: 30px;
+    color: #FF6802;
+	line-height: 25px;
+	font-weight: normal;
+}
+
+#catalog .product{
+	text-align: center;
+	float: left;
+	width: 150px;
+	height: 175px;
+	margin: 30px 75px 40px 10px;
+}
+
+#catalog .last_product{
+	text-align: center;
+	float: right;
+	width: 150px;
+	height: 175px;
+	margin: 30px 0px 30px 10px;
+}
+
+#catalog img{
+	width: 91px;
+	height: 91px;
+	-webkit-border-radius: 45px;
+	-moz-border-radius: 45px;
+	-ms-border-radius: 45px;
+	-o-border-radius: 45px;
+	border-radius: 45px;
+	margin-bottom: 10px;
+}
+
+#catalog h3{
+	text-align: center;
+	font-family: "Ubuntu Condensed";
+    font-size: 14px;
+    color: #0793C5;
+	line-height: 15px;
+	margin: 0px;
+	font-weight: normal;
+}
+
+#catalog p{
+	text-align: center;
+	font-family: "Ubuntu Condensed";
+    font-size: 12px;
+    color: #999999;
+	line-height: 15px;
+	margin: 0px;
+	font-weight: normal;
+}
+
+/* ------ */
+/* OTZYVY */
+/* ------ */
+
+.wrap_otzyvy {
+	width: 100%;
+	min-width: 900px;
+	background-color: #54C4F1;
+}
+
+.bg_otzyvy {
+}
+
+#otzyvy {
+	margin: 0px auto;
+	width: 900px;
+	height: 323px;
+	padding: 10px 15px;
+	font-weight: normal;
+}
+
+#otzyvy h1{
+	text-align: center;
+	font-family: "Ubuntu Condensed";
+    font-size: 30px;
+    color: #FFF;
+	font-weight: normal;
+	line-height: 30px;
+}
+
+#otzyvy .otzyvy_left_strelka{
+	
+}
+
+#otzyvy .otzyv{
+	float: left;
+	width: 254px;
+	height: 200px;
+	margin: 10px 20px 10px 10px;
+}
+
+#otzyvy .name{
+	margin: 0px auto 20px;
+	padding: 5px;
+	text-align: center;
+	border: 2px solid #fff;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-ms-border-radius: 30px;
+	-o-border-radius: 30px;
+	border-radius: 30px;
+	background-color: #333333;
+	font-family: "Ubuntu Condensed";
+    font-size: 14px;
+    color: #FFF;
+	width: 198px;
+	height: 54px;
+}
+
+#otzyvy .description{
+	text-align: center;
+	margin-top: 20px;
+	font-family: "Ubuntu Condensed";
+    font-size: 14px;
+    color: #FFF;
+}
+
+#otzyvy .otzyvy_right_strelka{
+	
+}
+
+/* carousel */
+.carousel-box {
+	position: relative;
+	margin: -5px 0 0 -15px;
+	width: 870px;
+}
+
+.carousel {
+	width: 800px;
+	margin-left: 30px !important;
+}
+
+.carousel-box .prev {
+	position: absolute;
+	left: 0;
+	top: 147px;
+	z-index: 10;
+	margin: -125px 10px 0 0px;
+}
+.carousel-box .next {
+	position: absolute;
+	right: 0;
+	top: 147px;
+	z-index: 10;
+	margin: -125px -30px 0 0;
+}
+
+.carousel-box .prev a, .carousel-box .next a {
+	cursor: pointer;
+}
+
+.carousel-box ul {
+	
+}
+
+.carousel-box ul li {
+	border: 0;
+	float: left;
+	width: 270px;
+	height: 200px;
+	margin: 10px 5px;
+	position: relative;
+}
+
+/* -------- */
+/* DOSTAVKA */
+/* -------- */
+
+.wrap_dostavka {
+	width: 100%;
+	min-width: 900px;
+	background-color: #d2dee1;
+}
+
+
+.bg_dostavka {
+	background: url('/images/dostavka-fon-mini.jpg') 0px 0px no-repeat;
+	background-position: center;
+	width: 100%;
+}
+
+#dostavka {
+	margin: 0px auto;
+	width: 900px;
+	height: 347px;
+	padding: 30px 15px;
+	font-weight: normal;
+}
+
+#dostavka .img_block {
+	float: left;
+	width: 300px;
+	height: 347px;
+	font-weight: normal;
+}
+
+#dostavka h1{
+	text-align: left;
+	font-family: "Ubuntu Condensed";
+    font-size: 30px;
+    color: #058DBF;
+	font-weight: normal;
+	line-height: 30px;
+	margin: 30px 0px 50px 0px;
+}
+
+#dostavka .text{
+	text-align: left;
+	float: left;
+	width: 280px;
+	margin: 0px 20px 0px 0px;
+}
+
+#dostavka .text_last{
+	text-align: left;
+	float: right;
+	width: 260px;
+	margin: 0px 0px 0px 0px;
+}
+
+#dostavka .text p{
+	text-align: left;
+	font-family: "Ubuntu Condensed";
+    font-size: 14px;
+    color: #333;
+	font-weight: normal;
+	line-height: 16px;
+	margin-bottom: 20px;
+}
+
+#dostavka .text_last p{
+	text-align: left;
+	font-family: "Ubuntu Condensed";
+    font-size: 14px;
+    color: #333;
+	font-weight: normal;
+	line-height: 16px;
+	margin-bottom: 40px;
+}
+
+/* ------ */
+/* DILERY */
+/* ------ */
+
+.wrap_dilery {
+	width: 100%;
+	min-width: 900px;
+	/*background-color: #ff9834;*/
+	background: url('/images/dilery-fon-pic.png') repeat;
+}
+
+
+.bg_dilery {
+	margin: 0px auto;
+	background: url('/images/dilery-fon.png') 0px 0px no-repeat;
+	background-position: center;
+	width: 100%;
+}
+
+#dilery {
+	margin: 0px auto;
+	background: url('/images/dilery-fon.png') 0px 0px no-repeat;
+	width: 900px;
+	height: 330px;
+	padding: 30px 15px 0px 0px;
+	font-weight: normal;
+}
+
+#dilery h1{
+	text-align: center;
+	font-family: "Ubuntu Condensed";
+    font-size: 30px;
+    color: #333333;
+	font-weight: normal;
+	line-height: 20px;
+	margin: 10px 0px 0px 0px;
+}
+
+#dilery ul.dilery{
+	list-style: none;
+	margin: 50px 0px 0px 0px;
+	padding: 0px;
+}
+
+#dilery ul.dilery li{
+	background: url('/images/dilery-yarlyk.png') 0px 0px no-repeat;
+	width: 150px;
+	height: 40px;
+	float: left;
+	font-family: "Ubuntu Condensed";
+    font-size: 16px;
+    color: #fff;
+	padding-left: 30px;
+	margin: 0px 40px 0px 0px;
+}
+
+#dilery ul.dilery li.last{
+	background: url('/images/dilery-yarlyk.png') 0px 0px no-repeat;
+	width: 90px;
+	height: 40px;
+	float: left;
+	font-family: "Ubuntu Condensed";
+    font-size: 16px;
+    color: #fff;
+	padding-left: 30px;
+	margin: 0px 0px 0px 0px;
+}
+
+#dilery .stat_dilerom {
+	font-family: "Ubuntu Condensed";
+	font-size: 26px;
+	color: #fff;
+	line-height: 2px;
+	width: 221px;
+	height: 41px;
+	border: 2px solid #fff;
+	display: block;
+	background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #50C1EE), color-stop(100%, #1C9ECB));
+	background: -webkit-linear-gradient(#50C1EE, #1C9ECB);
+	background: -moz-linear-gradient(#50C1EE, #1C9ECB);
+	background: -o-linear-gradient(#50C1EE, #1C9ECB);
+	background: linear-gradient(#50C1EE, #1C9ECB);
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-ms-border-radius: 20px;
+	-o-border-radius: 20px;
+	border-radius: 20px;
+	margin: 35px auto 0px;
+}
+	
+#dilery .stat_dilerom:hover {
+	background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #69CCF1), color-stop(100%, #188EB6));
+	background: -webkit-linear-gradient(#69CCF1, #188EB6);
+	background: -moz-linear-gradient(#69CCF1, #188EB6);
+	background: -o-linear-gradient(#69CCF1, #188EB6);
+	background: linear-gradient(#69CCF1, #188EB6);
+}
+
+/* --- */
+/* MAP */
+/* --- */
+
+.wrap_map {
+	width: 100%;
+	min-width: 900px;
+	background: #fff;
+}
+
+.bg_map {
+	margin: -1px auto;
+	background: url('/images/map-fon-mini.png') 0px 0px no-repeat;
+	background-position: center;
+	width: 100%;
+}
+
+#map {
+	margin: -1px auto;
+	width: 900px;
+	height: 736px;
+	padding: 30px 15px;
+}
+
+#map h1{
+	text-align: center;
+	font-family: "Ubuntu Condensed";
+    font-size: 30px;
+    color: #333333;
+	font-weight: normal;
+	line-height: 20px;
+	margin: 10px 0px 0px 0px;
+}
+
+#map .contact_block{
+	margin: 20px auto;
+	padding: 5px;
+	text-align: center;
+	border: 2px solid #fff;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	-ms-border-radius: 25px;
+	-o-border-radius: 25px;
+	border-radius: 25px;
+	background-color: #333333;
+	font-family: "Ubuntu Condensed";
+    font-size: 14px;
+    color: #FFF;
+	width: 758px;
+	height: 117px;
+}
+
+#map .left_contact_block {
+	text-align: left;
+	float: left;
+	margin: 15px 30px 15px 35px;
+}
+
+#map .right_contact_block {
+	text-align: left;
+	float: right;
+	margin: 15px 50px 15px 15px;
+}
+
+/* ------ */
+/* FOOTER */
+/* ------ */
+
+.wrap_footer {
+	width: 100%;
+	min-width: 900px;
+	/*background: #0995c5;*/
+	background: url('/images/fon-header-pic.png') repeat;
+}
+
+.bg_footer {
+	background: url('/images/footer-fon.png') 0px 0px no-repeat;
+	background-position: center;
+	width: 100%;
+	margin: 0 auto;
+}
+
+#footer {
+	margin: 0px auto;
+	width: 900px;
+	height: 83px;
+	padding: 20px 15px;
+}
+
+#footer ul.b_menu{
+	margin: 0px auto;
+	width: 700px;
+	list-style: none;
+}
+
+#footer ul.b_menu li{
+	height: 30px;
+	float: left;
+	margin: 0px 15px 0px 15px;
+}
+
+#footer ul.b_menu li a{
+	font-family: "Ubuntu Condensed";
+    font-size: 14px;
+    color: #fff;
+	text-decoration: none;
+}
+
+#footer .copy{
+	text-align: center;
+	font-family: "Ubuntu Condensed";
+    font-size: 14px;
+    color: #333333;
+}
+
+/***************************/
+/* POP-UP - FORM - DEFAULT */
+/***************************/
+
+#facebox {
+    left: 0;
+    position: absolute;
+    text-align: left;
+    top: 0;
+    z-index: 100;
+}
+
+#facebox .popup {
+	background: none repeat scroll 0 0 #FFFFFF;
+    border: 12px solid #FFFFFF;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+	border-radius: 8px;
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.2);
+    /*position: relative;*/
+}
+
+#facebox .content {
+    background: none repeat scroll 0 0 #FFFFFF;
+	border: 2px solid #55c2ed;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+	border-radius: 8px;
+    display: table;
+    width: 580px;
+}
+
+#facebox form {
+    margin: 0;
+}
+
+#facebox legend{
+	background: url('/images/title-form.png') 0px 0px no-repeat;
+	width: 580px;
+	height: 40px;
+	text-align: center;
+	padding: 10px;
+	font-family: "Ubuntu Condensed";
+	font-size: 16px;
+	color: #fff;
+	font-weight: 100;
+}
+
+#facebox form div{
+    display: block;
+    margin: 0;
+    padding: 10px 110px 10px 80px;
+	height: 58px;
+}
+
+#facebox form div.clear_div{
+    display: block;
+    margin: 0;
+    padding: 0;
+	height: 0px;
+}
+
+#facebox abbr[title] {
+    border-bottom: 1px dotted;
+	display: none;
+}
+
+#facebox label{
+	display: inline;
+	font-family: "Ubuntu Condensed";
+	font-size: 16px;
+	color: #999999;
+}
+
+#facebox input {
+	width: 280px;
+	height: 36px;
+	border: 1px solid #d2d0c6;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+	border-radius: 6px;
+	background-color: #EAEAEA;
+	-webkit-box-shadow: #b5afaa 1px 1px 1px 0px inset;
+	-moz-box-shadow: #b5afaa 1px 1px 1px 0px inset;
+	box-shadow: #b5afaa 1px 1px 1px 0px inset;
+	padding: 5px 15px 5px 15px;
+	color: #333; 
+	font-size: 16px;
+	font-family: "Ubuntu Condensed";
+	float: right;
+	margin-top: -7px;
+}
+
+#facebox textarea {
+	width: 280px !important;
+	height: 100px !important;
+	border: 1px solid #d2d0c6;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+	border-radius: 6px;
+	background-color: #EAEAEA;
+	-webkit-box-shadow: #b5afaa 1px 1px 1px 0px inset;
+	-moz-box-shadow: #b5afaa 1px 1px 1px 0px inset;
+	box-shadow: #b5afaa 1px 1px 1px 0px inset;
+	padding: 5px 15px 5px 15px;
+	color: #333; 
+	font-size: 16px;
+	font-family: "Ubuntu Condensed";
+	float: right;
+	margin-top: -7px;
+}
+
+#facebox input::-webkit-input-placeholder {
+	color: #333; 
+	font-size: 16px;
+	font-family: "Ubuntu Condensed";
+}
+
+#facebox input:-moz-placeholder {
+	color: #333; 
+	font-size: 16px;
+	font-family: "Ubuntu Condensed";
+}
+
+#facebox input:-ms-input-placeholder {
+	color: #333; 
+	font-size: 16px;
+	font-family: "Ubuntu Condensed";
+}
+
+#facebox input.placeholder {
+	color: #333; 
+	font-size: 16px;
+	font-family: "Ubuntu Condensed";
+}
+
+#facebox textarea::-webkit-input-placeholder {
+	color: #333; 
+	font-size: 16px;
+	font-family: "Ubuntu Condensed";
+}
+
+#facebox textarea:-moz-placeholder {
+	color: #333; 
+	font-size: 16px;
+	font-family: "Ubuntu Condensed";
+}
+
+#facebox textarea:-ms-input-placeholder {
+	color: #333; 
+	font-size: 16px;
+	font-family: "Ubuntu Condensed";
+}
+
+#facebox textarea.placeholder {
+	color: #333; 
+	font-size: 16px;
+	font-family: "Ubuntu Condensed";
+}
+
+#facebox .end_facebox {
+	display: block;
+	width: 200px;
+	height: 36px;
+	border: 1px solid #FF6903;
+	background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #FF9630), color-stop(100%, #FF6903));
+	background: -webkit-linear-gradient(#FF9630, #FF6903);
+	background: -moz-linear-gradient(#FF9630, #FF6903);
+	background: -o-linear-gradient(#FF9630, #FF6903);
+	background: linear-gradient(#FF9630, #FF6903);
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+	border-radius: 6px;
+	font-family: "Ubuntu Condensed";
+	font-size: 16px;
+	color: #fff;
+	font-weight: normal;
+	margin: 25px auto 40px;
+}
+	
+#facebox .end_facebox:hover {
+	background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #FFA851), color-stop(100%, #F06000));
+	background: -webkit-linear-gradient(#FFA851, #F06000);
+	background: -moz-linear-gradient(#FFA851, #F06000);
+	background: -o-linear-gradient(#FFA851, #F06000);
+	background: linear-gradient(#FFA851, #F06000);
+}
+
+
+#facebox .close {
+    /*background: none repeat scroll 0 0 #FFFFFF;*/
+    padding: 2px;
+    position: absolute;
+    right: 0px;
+    top: -45px;
+}
+
+#facebox .close img {
+    /*opacity: 0.3;*/
+}
+
+#facebox img {
+    border: 0 none;
+    margin: 0;
+}
+
+/*
+img {
+    border: medium none;
+    vertical-align: top;
+    border: 0 none;
+}
+*/

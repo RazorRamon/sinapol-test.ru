@@ -1,0 +1,210 @@
+/* Verstal: V V P */
+/* -------------- */
+
+*
+  +box-sizing(border-box)
+
+html, body
+  height: 100%
+
+.cf
+  +pie-clearfix
+
+.clear_div
+  clear: both
+
+img
+  border: none
+  vertical-align: top
+
+input, textarea
+  outline: none
+  +placeholder
+
+.inline-block
+  +inline-block
+
+.left
+  float: left
+.right
+  float: right
+
+a, input, input:active, input:focus, textarea, textarea:active, textarea:focus
+  outline: 0!important
+  outline-style: none!important
+  outline-width: 0!important
+
+\button::-moz-focus-inner 
+
+/* ------ */
+/* HEADER */
+/* ------ */
+
+#header
+  background: image-url('fon-header.png') 0px 0px no-repeat
+  width: 1280px
+  height: 249px
+  margin: auto
+  padding: 0px 205px 10px
+
+  a
+    font-family: "Trebuchet MS"
+    font-size: 13px
+    color: #CCCCCC
+    font-style: italic
+    line-height: 25px
+    text-decoration: underline
+
+  .header_left
+    width: 250px
+    text-align: left
+    float: left
+
+  .block_sotrudnichestva
+    margin-top: 80px
+    background: image-url('user_ico.png') 0px 0px no-repeat
+    padding-left: 25px
+    font-family: "Ubuntu Condensed"
+    font-size: 15px
+    color: #333333
+    text-transform: uppercase
+
+  .block_sotrudnichestva a
+    text-decoration: none
+
+  .block_sotrudnichestva a.uslovia
+    margin-left: -25px
+    font-family: "Ubuntu Condensed"
+    font-size: 15px
+    color: #fff
+    line-height: 25px
+    text-transform: none
+    font-style: normal
+    font-weight: 100
+    text-decoration: none
+    border-bottom: 1px dashed #fff
+
+  .header_center
+    background: image-url('logo-min.png') 0px 0px no-repeat
+    width: 347px
+    height: 230px
+    margin: -3px auto
+    float:left
+
+  .header_right
+    width: 250px
+    text-align: right
+    float: right
+
+  .block_sviazi
+    margin-top: 75px
+    font-family: "Ubuntu Condensed"
+    font-size: 24px
+    color: #333333
+    text-transform: uppercase
+    line-height: 20px
+
+  .block_sviazi a
+    font-family: "Ubuntu Condensed"
+    font-size: 15px
+    color: #fff
+    text-transform: none
+    font-style: normal
+    text-decoration: none
+    border-bottom: 1px dashed #fff
+  
+/* --------- */
+/* MENU_VERH */
+/* --------- */
+
+#block_menu
+  margin: 0px auto
+  width: 1280px
+  height: 41px
+  padding: 0px 190px
+
+  .verh_menu
+    position: relative
+    margin-top: -22px
+    width: 900px
+    height: 41px
+    +filter-gradient(#FF952F, #FF6A04)
+    +background(linear-gradient(#FF952F, #FF6A04))
+    +border-radius(20px)
+    z-index: 100
+
+  ul.v_menu
+    width: 900px
+    margin: auto
+    list-style: none
+    padding: 0px
+    text-align: center
+  
+    a
+      display: block
+      line-height: 36px
+      font-family: "Ubuntu Condensed"
+      font-size: 16px
+      color: #fff
+      text-decoration: none
+      text-transform: uppercase
+
+    &:hover
+      text-decoration: none
+
+    li
+      display: inline-block
+      margin-left: 20px
+      margin-right: 20px
+      height: 41px
+    
+      &:hover
+        border-bottom: 2px solid #fff
+
+    li.active
+      background: image-url('menu-active.png') 50% 100% no-repeat
+      overflow: visible
+      height: 46px
+
+      &:hover
+        border-bottom: 0px solid #fff
+
+      a
+        font-family: "Ubuntu Condensed"
+        font-size: 16px
+        color: #333
+        height: 41px
+        border-bottom: 2px solid #fff
+
+/* ------ */
+/* FOOTER */
+/* ------ */
+
+#footer
+  margin: 0px auto
+  background: image-url('footer-fon.png') 0px 0px no-repeat
+  width: 1280px
+  height: 83px
+  padding: 20px 205px
+
+  ul.b_menu
+    margin: 0px auto
+    width: 700px
+    list-style: none
+
+    li
+      height: 30px
+      float: left
+      margin: 0px 15px 0px 15px
+
+      a
+        font-family: "Ubuntu Condensed"
+        font-size: 14px
+        color: #fff
+        text-decoration: none
+
+  .copy
+    text-align: center
+    font-family: "Ubuntu Condensed"
+    font-size: 14px
+    color: #333333

@@ -1,0 +1,382 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Заголовок</title>
+	<meta name="description" content="opisanie" />
+	<meta name="keywords" content="keywords" />
+	<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+	<link rel="stylesheet" type="text/css" href="/css/normalize.css" />
+
+	<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+	<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/news/rss/" />
+	
+	<!-- Подключение jQuery -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+
+	<!-- Скрипт для всплывающего верхнего меню и прокрутки к нужным пунктам -->
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(window).scroll(function (){
+				if ($(this).scrollTop() > 230){$('.wriper_menu, #block_vsplyv_menu').fadeIn(0);} else {$('.wriper_menu, #block_vsplyv_menu').fadeOut(100);}
+			});
+			$(window).scroll(function (){
+				if ($(this).scrollTop() > 230){$('.active').removeClass("active"); $('#link1, #link11').addClass("active");}
+				if ($(this).scrollTop() > 850){$('.active').removeClass("active"); $('#link2, #link12').addClass("active");}
+				if ($(this).scrollTop() > 1400){$('.active').removeClass("active"); $('#link3, #link13').addClass("active");}
+				if ($(this).scrollTop() > 1810){$('.active').removeClass("active"); $('#link4, #link14').addClass("active");}
+				if ($(this).scrollTop() > 2160){$('.active').removeClass("active"); $('#link5, #link15').addClass("active");}
+				if ($(this).scrollTop() > 2485){$('.active').removeClass("active"); $('#link6, #link16').addClass("active");}
+			});
+			$('#link1, #link11, #link21').click(function (){
+				$('body,html').animate({scrollTop: 200}, 300); return false;
+			});
+			$('#link2, #link12, #link22').click(function (){
+				$('body,html').animate({scrollTop: 877}, 300); return false;
+			});
+			$('#link3, #link13, #link23').click(function (){
+				$('body,html').animate({scrollTop: 1500}, 300); return false;
+			});
+			$('#link4, #link14, #link24').click(function (){
+				$('body,html').animate({scrollTop: 1820}, 300); return false;
+			});
+			$('#link5, #link15, #link25').click(function (){
+				$('body,html').animate({scrollTop: 2170}, 300); return false;
+			});
+			$('#link6, #link16, #link26').click(function (){
+				$('body,html').animate({scrollTop: 2495}, 300); return false;
+			});
+		});
+	</script>
+	
+	<!-- Карусель Отзывов на главной -->
+	<script src="/js/jcarousellite.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+		  $("a.new_window").attr("target", "_blank");
+		  
+		  //carousel
+		  $(".carousel").jCarouselLite({
+			  btnNext: ".next",
+			  btnPrev: ".prev"
+		  });
+		});
+	</script>
+
+	<!-- Слайдер -->
+	<script src="/js/slides.min.jquery.js"></script>
+	<!--<link rel="stylesheet" href="/css/global.css">-->
+		<script>
+		$(function(){
+			// Set starting slide to 1
+			var startSlide = 1;
+			// Get slide number if it exists
+			if (window.location.hash) {
+				startSlide = window.location.hash.replace('#','');
+			}
+			// Initialize Slides
+			$('#slides').slides({
+				preload: true,
+				preloadImage: '/img/loading.gif',
+				generatePagination: true,
+				play: 500000,
+				pause: 250000,
+				hoverPause: true,
+				// Get the starting slide
+				start: startSlide,
+				animationComplete: function(current){
+					// Set the slide number as a hash
+					window.location.hash = '#' + current;
+				}
+			});
+		});
+	</script>
+
+</head>
+<body>
+	<div class="wrap_header">
+	    <div class="bg_header">
+			<div id="header">
+				<div class="header_left">
+					<a href="">english version</a>
+					<div class="block_sotrudnichestva">Стать дилером <a href=""><img src="/images/skobka-right.png"/></a><br /><a class="uslovia" href="">условия сотрудничества</a></div>
+				</div>
+				<div class="header_center"></div>
+				<div class="header_right">
+					<a href="">перезвоните мне</a>
+					<div class="block_sviazi">+7 495 221-84-55<br /><a href="">форма обратной связи</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="wrap_block_menu">
+	    <div class="bg_block_menu">
+			<div id="block_menu">
+				<div class="verh_menu">
+					<ul class="v_menu">
+						<li id="link11" class="active"><a nohref>О компании</a></li>
+						<li id="link12"><a nohref>Каталог продукции</a></li>
+						<li id="link13"><a nohref>Отзывы</a></li>
+						<li id="link14"><a nohref>Доставка</a></li>
+						<li id="link15"><a nohref>Дилеры</a></li>
+						<li id="link16"><a nohref>Контакты</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="wrap_block_vsplyv_menu">
+		<div class="wriper_menu" style="display: none;">
+			<div id="block_vsplyv_menu" style="display: none;">
+				<div class="verh_menu">
+					<ul class="v_menu">
+						<li id="link1" class="active"><a nohref>О компании</a></li>
+						<li id="link2"><a nohref>Каталог продукции</a></li>
+						<li id="link3"><a nohref>Отзывы</a></li>
+						<li id="link4"><a nohref>Доставка</a></li>
+						<li id="link5"><a nohref>Дилеры</a></li>
+						<li id="link6"><a nohref>Контакты</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="wrap_block_slider">
+	    <div class="bg_block_slider">
+			<div id="block_slider">
+				<div id="example">
+					<div id="slides">
+						<div class="slides_container">
+							<div class="slide">Компания ООО «Синапол» — одна из ведущих российских компаний по разработке и производству технологических смазок, смазочно-охлаждающих жидкостей для обрабатывающей промышленности и разделительных смазок для производства бетонных изделий. Мы изготавливаем и реализуем смазочно-охлаждающие жидкости (CОЖ и СОТС) для волочения, прокатки, резки, шлифовки металлов и сплавов, а так же для камнеобработки. Смазки и эмульсолы для опалубки, форм ЖБИ в настоящее время применяются многими строительными компаниями и предприятиями по производству железобетонных изделий.<br /></div>
+							<div class="slide">Компания ООО «Синапол» — одна из ведущих российских компаний по разработке и производству технологических смазок, смазочно-охлаждающих жидкостей для обрабатывающей промышленности и разделительных смазок для производства бетонных изделий. Мы изготавливаем и реализуем смазочно-охлаждающие жидкости (CОЖ и СОТС) для волочения.<br /></div>
+							<div class="slide">Компания ООО «Синапол» — одна из ведущих российских компаний по разработке и производству технологических смазок, смазочно-охлаждающих жидкостей для обрабатывающей промышленности и разделительных смазок для производства бетонных изделий. Мы изготавливаем и реализуем смазочно-охлаждающие жидкости (CОЖ и СОТС) для волочения, прокатки, резки, шлифовки металлов и сплавов, а так же для камнеобработки. Смазки и эмульсолы для опалубки, форм ЖБИ в настоящее время применяются многими строительными компаниями и предприятиями по производству железобетонных изделий. Наши продукты c торговой маркой «Синапол» и «Нометол» получили патенты Российской Федерации на изобретения.<br /></div>
+							<div class="slide">Компания ООО «Синапол» — одна из ведущих российских компаний по разработке и производству технологических смазок, смазочно-охлаждающих жидкостей для обрабатывающей промышленности и разделительных смазок для производства бетонных изделий. Мы изготавливаем и реализуем смазочно-охлаждающие жидкости (CОЖ и СОТС) для волочения.<br /></div>
+							<div class="slide">Компания ООО «Синапол» — одна из ведущих российских компаний по разработке и производству технологических смазок, смазочно-охлаждающих жидкостей для обрабатывающей промышленности и разделительных смазок для производства бетонных изделий. Мы изготавливаем и реализуем смазочно-охлаждающие жидкости (CОЖ и СОТС) для волочения, прокатки, резки, шлифовки металлов и сплавов, а так же для камнеобработки. Смазки и эмульсолы для опалубки, форм ЖБИ в настоящее время применяются многими строительными компаниями и предприятиями по производству железобетонных изделий. Наши продукты c торговой маркой «Синапол» и «Нометол» получили патенты Российской Федерации на изобретения.<br /></div>
+						</div>
+						<a href="#" class="prev"><img src="/img/arrow-prev.png" alt="Arrow Prev"></a>
+						<a href="#" class="next"><img src="/img/arrow-next.png" alt="Arrow Next"></a>
+					</div>
+				</div>
+				<!--<div class="slider_description">Компания ООО «Синапол» — одна из ведущих российских компаний по разработке и производству технологических смазок, смазочно-охлаждающих жидкостей для обрабатывающей промышленности и разделительных смазок для производства бетонных изделий. Мы изготавливаем и реализуем смазочно-охлаждающие жидкости (CОЖ и СОТС) для волочения, прокатки, резки, шлифовки металлов и сплавов, а так же для камнеобработки. Смазки и эмульсолы для опалубки, форм ЖБИ в настоящее время применяются многими строительными компаниями и предприятиями по производству железобетонных изделий. Наши продукты c торговой маркой «Синапол» и «Нометол» получили патенты Российской Федерации на изобретения.<br /></div>
+				<ul class="slider_paginavi">
+					<a href="#"><li class="slader_strelka_left">&nbsp;</li></a>
+					<a href="#"><li>&nbsp;</li></a>
+					<a href="#"><li class="activ">&nbsp;</li></a>
+					<a href="#"><li>&nbsp;</li></a>
+					<a href="#"><li class="slader_strelka_right">&nbsp;</li></a>
+				</ul>-->
+			</div>
+		</div>
+	</div>
+	<div class="wrap_about">
+	    <div class="bg_about">
+			<div id="about">
+				<img src="/images/germany-map.png"/>
+				<h1>СДЕЛАНО В ГЕРМАНИИ</h1>
+				<p>Компания ООО «Синапол» — одна из ведущих российских компаний по разработке и производству технологических смазок, смазочно-охлаждающих жидкостей для обрабатывающей промышленности и разделительных смазок для производства бетонных изделий. Мы изготавливаем и реализуем смазочно-охлаждающие жидкости (CОЖ и СОТС) для волочения, прокатки, резки, шлифовки металлов и сплавов, а так же для камнеобработки. Смазки и эмульсолы для опалубки, форм ЖБИ в настоящее время применяются</p>
+			</div>
+		</div>
+	</div>
+	<div id="catalog">
+		<h1>КАТАЛОГ</h1>
+		<div class="product">
+			<img src="/images/product-1.png"/>
+			<h3>СИНАПОЛ (Эмульсол)</h3>
+			<p>Концентрат <br />многофункциональной<br />смазочно-охлаждающей<br />жидкости (концентрат СОЖ) </p>
+		</div>
+		<div class="product">
+			<img src="/images/product-2.png"/>
+			<h3>СИНАПОЛ-ЭКТ (Эмульсол)</h3>
+			<p>“СИНАПОЛ-ЭКТ”<br />Для механической <br />обработки металлов <br />и сплавов. </p>
+		</div>
+		<div class="product">
+			<img src="/images/product-3.png"/>
+			<h3>НОМЕТОЛ-9 (Эмульсол)</h3>
+			<p>Разделительная эмульсия<br />для смазывания<br />полиуретановых,<br />полипропиленовых форм</p>
+		</div>
+		<div class="last_product">
+			<img src="/images/product-4.png"/>
+			<h3>НОМЕТОЛ-9-0</h3>
+			<p>Разделительная смазка<br />для смазывания <br />полиуретановых,<br />полипропиленовых форм</p>
+		</div>
+		<div class="product">
+			<img src="/images/product-5.png"/>
+			<h3>НОМЕТОЛ-7 (Эмульсол)</h3>
+			<p>Концентрированная<br />многофункциональная<br />смазочно-охлаждающая<br />жидкость</p>
+		</div>
+		<div class="product">
+			<img src="/images/product-6.png"/>
+			<h3>СИНАПОЛ-СБЕ (Эмульсол)</h3>
+			<p>СОЖ, представляющая<br />собой комплекс биологически<br />неактивных растворимых<br />полимеров</p>
+		</div>
+		<div class="product">
+			<img src="/images/product-7.png"/>
+			<h3>ТАНИОЛ (Эмульсол)</h3>
+			<p>Концентрат<br />многофункциональной<br />смазочно-охлаждающей<br />жидкости</p>
+		</div>
+		<div class="last_product">
+			<img src="/images/product-8.png"/>
+			<h3>РЕГАТОЛ</h3>
+			<p>Концентрат<br />смазочно-охлаждающей<br />жидкости применяется<br />в виде водной эмульсии</p>
+		</div>
+	</div>
+	<div class="wrap_otzyvy">
+	    <div class="bg_otzyvy">
+			<div id="otzyvy">
+				<h1>ОТЗЫВЫ</h1>
+				<div class="carousel-box">
+					<div class="prev"><a href="#"><img class="otzyvy_left_strelka" src="/images/otzyvy_left_strelka.png"></a></div>
+					<div class="carousel">
+						<ul>
+							<li style="overflow: hidden; float: left;">
+							        <div class="box">
+										<div class="otzyv">
+											<div class="name">Анищенко Сергей Петрович<br />ООО “Техспор”</div>
+											<div class="description">“Очень довольны продуктом компании<br />Синапол. Всем рекомендую к использованию!<br />также хочу отметить расторопность отдела<br />продаж нашего партнера. Не пожалеете”</div>
+										</div>
+							        </div>
+							</li>
+							<li style="overflow: hidden; float: left;">
+							        <div class="box">
+										<div class="otzyv">
+											<div class="name">Анищенко Сергей Петрович<br />ООО “Техспор”</div>
+											<div class="description">“Очень довольны продуктом компании<br />Синапол. Всем рекомендую к использованию!<br />также хочу отметить расторопность отдела<br />продаж нашего партнера. Не пожалеете”</div>
+										</div>
+							        </div>
+							</li>
+							<li style="overflow: hidden; float: left;">
+							        <div class="box">
+										<div class="otzyv">
+											<div class="name">Анищенко Сергей Петрович<br />ООО “Техспор”</div>
+											<div class="description">“Очень довольны продуктом компании<br />Синапол. Всем рекомендую к использованию!<br />также хочу отметить расторопность отдела<br />продаж нашего партнера. Не пожалеете”</div>
+										</div>
+							        </div>
+							</li>
+						</ul>
+					</div>
+					<div class="next"><a href="#"><img class="otzyvy_right_strelka" src="/images/otzyvy_right_strelka.png"></a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="wrap_dostavka">
+	    <div class="bg_dostavka">
+			<div id="dostavka">
+				<div class="img_block">
+					<h1>О ДОСТАВКЕ</h1>
+					<img src="/images/car_dostavka.png">
+				</div>
+				<div class="text">
+					<p>При оформлении покупки online или в нашем магазине вы можете заказать доставку товара на дом или в офис. Заказывая товары с доставкой, вы сокращаете путь к заказу до входной двери квартиры или офиса, а мы в свою очередь помогаем вам сберечь ваше время и силы, сделать легким и удобным весь процесс покупки.</p>
+					<p>Мы осуществляем доставку по Санкт-Петербургу, а также по Ленинградской области в пределах 50 км от КАД.</p>
+					<p>Каждый этап доставки с момента заказа услуги до получения товара вы можете отслеживать в вашем личном кабинете или позвонив нам по телефону</p>
+				</div>
+				<div class="text_last">
+					<p>Стоимость различных видов доставки по Ленинградской области зависит от удаленности от Санкт-Петербурга. Рассчитать стоимость доставки по Ленинградской области вы можете в личном кабинете при оформлении заказа или позвонив нам по телефону (812) 336-37-77.</p>
+					<p>Вид доставки и ее стоимость определяются автоматически при заказе услуги в ходе оформления заказа в системе online-резервирования www.ulmart.ru, либо сообщаются нашими сотрудниками при осуществлении покупки в магазине или по телефону call-центра.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="wrap_dilery">
+	    <div class="bg_dilery">
+			<div id="dilery">
+				<h1>ДИЛЕРЫ</h1>
+				<ul class="dilery">
+					<li>Москва</li>
+					<li>Екатеринбург</li>
+					<li>Самара</li>
+					<li>Ростов-на-Дону</li>
+					<li class="last">Красноярск</li>
+					<li>Санкт-Петербург</li>
+					<li>Нижний Новгород</li>
+					<li >Омск</li>
+					<li>Уфа</li>
+					<li class="last">Пермь</li>
+					<li>Новосибирск</li>
+					<li>Казань</li>
+					<li>Челябинск</li>
+					<li>Волгоград</li>
+					<li class="last">Воронеж</li>
+				</ul>
+				<div class="clear_div"></div>
+				<button class="stat_dilerom">стать дилером</button>
+			</div>
+		</div>
+	</div>
+	<div class="wrap_map">
+	    <div class="bg_map">
+			<div id="map">
+				<h1>КОНТАКТЫ</h1>
+				<div class="contact_block">
+					<div class="left_contact_block">Офис и склад на 16км МКАД:<br />140091, Московская область, г. Дзержинский, ул. Энергетиков д.4<br />Территория сервис-центра КАМАЗ - 400 м от МКАД между<br />Каширским и Рязанским шоссе</div>
+					<div class="right_contact_block">Тел./Факс : (495) 221-8455<br />Резервные телефоны: (495) 745-5959<br />Email: sinapol@kanpro.ru</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="wrap_footer">
+	    <div class="bg_footer">
+			<div id="footer">
+				<ul class="b_menu">
+					<li id="link21"><a href="">О КОМПАНИИ</a></li>
+					<li id="link22"><a href="">КАТАЛОГ ПРОДУКЦИИ</a></li>
+					<li id="link23"><a href="">ОТЗЫВЫ</a></li>
+					<li id="link24"><a href="">ДОСТАВКА</a></li>
+					<li id="link25"><a href="">ДИЛЕРЫ</a></li>
+					<li id="link26"><a href="">КОНТАКТЫ</a></li>
+				</ul>
+				<div class="clear_div"></div>
+				<div class="copy">СИНАПОЛ © 2013</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="facebox" style="top: 130px; left: 470px;">
+		<div class="popup">
+			<div class="content">
+				<form id="new_contact_message" class="simple_form new_contact_message" method="post" data-remote="true" action="/contact_messages" accept-charset="UTF-8">
+					<legend>ФОРМА ОБРАТНОЙ СВЯЗИ</legend>
+					<div style="margin:0; padding:0; display:inline">
+						<input type="hidden" value="?" name="utf8">
+					</div>
+					<div class="input hidden contact_message_type">
+						<input id="contact_message_type" class="hidden" type="hidden" value="diler" name="contact_message[type]">
+					</div>
+					<div class="input string required contact_message_name">
+						<label class="string required" for="contact_message_name">
+							<abbr title="required">*</abbr>
+							Ваше имя
+						</label>
+						<input id="contact_message_name" class="string required" type="text" required="required" name="contact_message[name]" aria-required="true">
+					</div>
+					<div class="input tel required contact_message_phone">
+						<label class="tel required" for="contact_message_phone">
+							<abbr title="required">*</abbr>
+							Телефон
+						</label>
+						<input id="contact_message_phone" class="string tel required" type="tel" required="required" name="contact_message[phone]" aria-required="true">
+					</div>
+					<div class="input email optional contact_message_email">
+						<label class="email optional" for="contact_message_email">Email</label>
+						<input id="contact_message_email" class="string email optional" type="email" name="contact_message[email]">
+					</div>
+					
+					<div class="input qv optional contact_message_qw">
+						<label class="qv optional" for="contact_message_qv">Вопрос</label>
+						<textarea id="contact_message_qw" class="string qw optional" type="text" name="contact_message[email]" placeholder="Хочу купить СОЖ именно у Вас. Как это сделать?" required=""></textarea>
+					</div>
+					<div class="clear_div"></div>
+					<button class="end_facebox" type="submit" value="Create Contact message" name="commit" role="button" aria-disabled="false">ОТПРАВИТЬ ВОПРОС</button>
+				</form>
+			</div>
+			<a class="close" href="#">
+				<img class="close_image" title="close" src="/images/pop-up-close.png">
+			</a>
+		</div>
+	</div>
+	
+</body>
+</html>
